@@ -10,37 +10,54 @@
             <h1>Excercise 8.5a - input</h1>
             <div class="form-group">
                 <label for="base">Triangle base</label>
-                <input type="text" class="form-control" name="base" id="base" placeholder="Triangle base" >
+                <input type="number" class="form-control" name="base" id="base" placeholder="Triangle base" required>
             </div>
             <div class="form-group">
                 <label for="height">Triangle height</label>
-                <input type="text" class="form-control" name="height" id="height" placeholder="Triangle height">
+                <input type="number" class="form-control" name="height" id="height" placeholder="Triangle height" required>
             </div>
             <button type="submit" class="btn btn-default" onclick="calculateTriangleArea()">Calculate area</button>
             <div class="result">
               <h3>Result:</h3>
-              <p id="result"></p>
+              <p id="result-8.5a"></p>
             </div>
         </div>
         <div class="exercise">
-            <h1>Exercise 8.6</h1>
+            <h1>Exercise 8.6a - input with if</h1>
             <div class="form-group">
                 <label for="var-a">Variable a</label>
-                <input type="text" class="form-control" name="var-a" id="var-a" placeholder="Variable a" >
+                <input type="number" class="form-control" name="var-a" id="var-a" placeholder="Variable a" required>
             </div>
             <div class="form-group">
-                <label for="var-b">Triangle height</label>
-                <input type="text" class="form-control" name="var-b" id="var-b" placeholder="Variable b">
+                <label for="var-b">Variable b</label>
+                <input type="number" class="form-control" name="var-b" id="var-b" placeholder="Variable b" required>
             </div>
             <button type="submit" class="btn btn-default" onclick="calculateFormula()">Calculate formula</button>
             <div class="result">
               <h3>Result:</h3>
-              <p id="result"></p>
+              <p id="result-8.6a"></p>
+            </div>
+        </div>
+        <div class="exercise">
+            <h1>Exercise 8.6b - input with swich</h1>
+            <div class="form-group">
+                <label for="var-a">Variable a</label>
+                <input type="number" class="form-control" name="var-a" id="var-a" placeholder="Variable a" required>
+            </div>
+            <div class="form-group">
+                <label for="var-b">Variable b</label>
+                <input type="number" class="form-control" name="var-b" id="var-b" placeholder="Variable b" required>
+            </div>
+            <button type="submit" class="btn btn-default" onclick="calculateFormula()">Calculate formula</button>
+            <div class="result">
+              <h3>Result:</h3>
+              <p id="result-8.6b"></p>
             </div>
         </div>
   </div>
 <!-- SCRIPTS -->
     <script src="js/Exercise-8.5a.js"></script>
     <script src="js/Exercise-8.6a.js"></script>
+    <script src="js/Exercise-8.6b.js"></script>
 </body>
 </html>

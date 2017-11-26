@@ -7,8 +7,14 @@ body {
 
 .exercise {
   border-bottom: solid 1px black;
-
+  input {
+    width: 300px;
+    &:invalid {
+      border-color: red;
+    }
+  }
 }
+
 
 .result {
   height: 100px;

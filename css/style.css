@@ -5,6 +5,10 @@ body {
 
 .exercise {
   border-bottom: solid 1px black; }
+  .exercise input {
+    width: 300px; }
+    .exercise input:invalid {
+      border-color: red; }
 
 .result {
   height: 100px; }
