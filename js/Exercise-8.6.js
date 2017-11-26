@@ -1,3 +1,5 @@
+function calculateFormula() {
+
 var a = prompt('Podaj zmienną \"a\":');
 var b = prompt('Podaj zmienną \"b\":');
 
@@ -9,4 +11,5 @@ if (calculation > 0) {
   console.log('Wynik ujemny');
 } else {
   console.log('Wynik jest równy zero');
+}
 }
