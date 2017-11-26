@@ -1,0 +1,16 @@
+body {
+  margin: 0; }
+  body .container {
+    width: 900px; }
+
+.exercise {
+  border-bottom: solid 1px black; }
+
+.result {
+  height: 100px; }
+  .result p {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder; }
+
+/*# sourceMappingURL=style.css.map */

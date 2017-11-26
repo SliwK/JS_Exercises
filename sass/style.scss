@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  .container {
+    width: 900px;
+  }
+}
+
+.exercise {
+  border-bottom: solid 1px black;
+
+}
+
+.result {
+  height: 100px;
+  p{
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+}
