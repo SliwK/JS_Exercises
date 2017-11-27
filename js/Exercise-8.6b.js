@@ -1,20 +1,20 @@
-function calculateFormula() {
-var a = document.getElementById("var-a").value;
-var b = document.getElementById("var-b").value;
+function calculateFormulaTwo() {
+var c = document.getElementById("var-c").value;
+var d = document.getElementById("var-d").value;
 
 var text;
-var calculation = (a * a) - (2 * a * b) + (b * b);
+var calculationTwo = (c * c) - (2 * c * d) + (d * d);
 
-switch (calculation) {
-    case calculation > 0:
+switch (true) {
+    case (calculationTwo > 0):
         text = 'Wynik dodatni';
         console.log('Wynik dodatni');
         break;
-    case calculation < 0:
+    case (calculationTwo < 0):
         text = 'Wynik ujemny';
         console.log('Wynik ujemny');
         break;
-    case calculation = 0:
+    case (calculationTwo == 0):
         text = 'Wynik równy zero';
         console.log('Wynik jest równy zero');
         break;
@@ -22,6 +22,6 @@ switch (calculation) {
         text = 'Niepoprawne dane - spróbuj jeszcze raz!';
 }
 
-document.getElementById("result-8.6b").innerHTML = (text + ' - czyli:' + calculation);
+document.getElementById("result-8.6b").innerHTML = (text + ' - czyli:' + calculationTwo);
 
 }
