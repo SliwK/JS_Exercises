@@ -9,6 +9,7 @@ if (Number(a) > 0 && Number(h) > 0) {
     alert('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
   } else {
     alert('Wrong data - try again!');
+    return false;
   }
 
   document.getElementById("result-8.5a").innerHTML = triangleArea;
