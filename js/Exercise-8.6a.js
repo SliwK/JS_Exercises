@@ -1,15 +1,14 @@
-function calculateFormula() {
+function calculateFormulaThree() {
+
 var a = document.getElementById("varA").value;
 var b = document.getElementById("varB").value;
-
-var text;
 var calculation = (a * a) - (2 * a * b) + (b * b);
+var text;
 
-if (varA.value.trim() == "" || varB.value.trim() === "") {
+if (a =="" || b == "") {
     alert("Brak danych!");
     return false;
-    } else if (true) {
-         if(calculation > 0) {
+  } else if(calculation > 0) {
           text = 'Wynik dodatni';
           console.log('Wynik dodatni');
         } else if (calculation < 0) {
@@ -20,7 +19,8 @@ if (varA.value.trim() == "" || varB.value.trim() === "") {
           console.log('Wynik jest równy zero');
         }
 
+
 document.getElementById("result-8.6a").innerHTML = (text + ' - czyli:' + calculation);
 
-    }
 }
+document.getElementById("click").onclick = function() {calculateFormulaThree();};
