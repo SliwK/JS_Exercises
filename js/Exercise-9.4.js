@@ -43,3 +43,19 @@ for(i = 0; i < h; i++) {
 
 
 var tree = drawTree(10);
+
+/* to nie działa dobrze
+function drawTree (h) {
+for(i = 0; i < h; i++) {
+  var gap = " ";
+  gap += " ".repeat(h-(i+1));
+  for(j = 0; j < i; j++) {
+    var star = "*";
+    star += "*".repeat(2*i -1);
+  console.log(gap+star);
+  }
+}
+}
+
+var tree = drawTree(8);
+*/
