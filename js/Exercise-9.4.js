@@ -44,7 +44,7 @@ var tree = drawTree(10);
 */
 
 //podejście z for'ami i repeat'ami
-
+/*
 var h = 5;
 for(i = 0; i < h; i++) {
   var gap = " ";
@@ -53,3 +53,24 @@ for(i = 0; i < h; i++) {
   star = "*".repeat(2*i+1);
  console.log(gap+star);
 }
+*/
+
+//choinka oparta na for'ach ..ale trzech :(
+
+function drawTree(height) {
+  for (var level = 0; level <= height; level++) {
+    var result = '';
+    for (i=level;i<height;i++) {
+      result += '  ';
+    }
+    for (i=0;i<level;i++) {
+      result += "* ";
+    }
+    for (i=0;i<level;i++) {
+      result += "* ";
+    }
+    console.log(result);
+  }
+}
+
+drawTree(8);
