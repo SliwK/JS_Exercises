@@ -56,7 +56,7 @@ for(i = 0; i < h; i++) {
 */
 
 //choinka oparta na for'ach ..ale trzech :(
-
+/*
 function drawTree(height) {
   for (var level = 0; level <= height; level++) {
     var result = '';
@@ -74,3 +74,21 @@ function drawTree(height) {
 }
 
 drawTree(8);
+*/
+
+//Kolejna wersja tym razem na for'ach ale dwóch
+
+function drawTree(height) {
+  for (var level = 1; level <= height; level++) {
+    var result = '';
+    for (i = level; i < height; i++) {
+      result += ' ';
+    }
+    for (j = 0; j < 2 * level - 1; j++) {
+      result += '*';
+    }
+    console.log(result);
+  }
+}
+
+drawTree(5);
